@@ -1,9 +1,9 @@
 # liri-node-app
-=================================================================================
+---
 Language Interpretation and Recognition Interface app using NodeJS, and the BandsInTown, and Spotify APIs
 
 ## Usage:
-=================================================================================
+---
 To use this project you'll need:
     -[Axios][axios], 
     -[Spotify][spotify], 
@@ -22,5 +22,7 @@ Next, create a `.env` file and add the following to it, replacing the values wit
         SPOTIFY_ID=your-spotify-id
         SPOTIFY_SECRET=your-spotify-secret
         ```
-
+---
+Contributors:
+Jason Scotto
 
