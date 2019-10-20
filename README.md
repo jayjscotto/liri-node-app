@@ -18,13 +18,13 @@ Installation of all dependencies is handled via npm:
 
 Next, create a `.env` file and add the following to it, replacing the values with your API keys once you have them:
 
-        ```javascript
-        # Spotify API keys
+```javascript
+# Spotify API keys
 
-        SPOTIFY_ID=your-spotify-id
-        SPOTIFY_SECRET=your-spotify-secret
-        ```
----
-Contributors:
+SPOTIFY_ID=your-spotify-id
+SPOTIFY_SECRET=your-spotify-secret
+```
+
+##Contributors:
 Jason Scotto
 
