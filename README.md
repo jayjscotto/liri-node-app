@@ -5,13 +5,16 @@ Language Interpretation and Recognition Interface app using NodeJS, and the Band
 ## Usage:
 
 To use this project you'll need:
-    -[Axios][axios], 
-    -[Spotify][spotify], 
-    -[Moment][moment], 
-    -[Dotenv][dotenv]
+
+    [Axios][axios], 
+    [Spotify][spotify], 
+    [Moment][moment], 
+    [Dotenv][dotenv]
 
 Installation of all dependencies is handled via npm:
-    >>npm install
+
+    >npm install
+
 
 Next, create a `.env` file and add the following to it, replacing the values with your API keys once you have them:
 
