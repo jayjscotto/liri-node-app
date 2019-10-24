@@ -7,7 +7,7 @@ Language Interpretation and Recognition Interface app using NodeJS, and the Band
 To use this project you'll need:
 
     [Axios][axios], 
-    [Spotify][spotify], 
+    [Spotify][node-spotify-api], 
     [Moment][moment], 
     [Dotenv][dotenv]
 
