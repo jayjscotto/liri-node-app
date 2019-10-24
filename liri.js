@@ -34,14 +34,15 @@ operate(process.argv[2]);
 //    * If no song is provided then your program will default to "The Sign" by Ace of Base.
 
 //SPOTIFY SEARCH FUNCTION
-const searchSpotify = (arg1) => {
+function searchSpotify (arg1) {
     spotify.search({type: "track", query: arg1}).then(response => {
         let trackArray = response.tracks.items;
         for (let i = 0; i < trackArray.length; i++) {
             console.log(`Artist:${response.tracks.items[i].artists[0].name}`);
-            console.log(`Song: ${}`);
-            console.log(`Preview Link: ${}`);
-            console.log(`Album: ${}`);
+            console.log(`Song: ${response.tracks.items[i].name}`);
+            console.log(`Preview Link: ${response.tracks.preview_url}`);
+            console.log(`Album: ${response.tracks.items[i].name}`);
+            console.log("\r\n\r\n");
         }
     }).catch(err => console.log(err));
 }
