@@ -1,27 +1,52 @@
 require("dotenv").config();
 
 const keys = require("./keys.js");
+const axios = require("axios");
+const Spotify = require("node-spotify-api");
 
 const spotify = new Spotify(keys.spotify);
 
+console.log(spotify);
+function operate(command) {
+    switch (command) {
+        case `spotify-this-song`: 
+            searchSpotify(process.argv[3]);
+            break;
+
+        case `movie-this`:
+            movieFind(process.argv[3]);
+            break;
+
+        case `do-what-it-says`:
+            randomRead(process.argv[3]);
+            break;
+    }
+}
+operate(process.argv[2]);
+
 //SPOTIFY
 // 2. `node liri.js spotify-this-song '<song name here>'`
-
 //    * This will show the following information about the song in your terminal/bash window
-
 //      * Artist(s)
-
 //      * The song's name
-
 //      * A preview link of the song from Spotify
-
 //      * The album that the song is from
-
 //    * If no song is provided then your program will default to "The Sign" by Ace of Base.
 
-function args (arg1, arg2) {
-    
+//SPOTIFY SEARCH FUNCTION
+const searchSpotify = (arg1) => {
+    spotify.search({type: "track", query: arg1}).then(response => {
+        let trackArray = response.tracks.items;
+        for (let i = 0; i < trackArray.length; i++) {
+            console.log(`Artist:${response.tracks.items[i].artists[0].name}`);
+            console.log(`Song: ${}`);
+            console.log(`Preview Link: ${}`);
+            console.log(`Album: ${}`);
+        }
+    }).catch(err => console.log(err));
 }
+
+
 
 // //OMDB 
 // 3. `node liri.js movie-this '<movie name here>'`
