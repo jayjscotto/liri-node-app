@@ -2,70 +2,94 @@ require("dotenv").config();
 
 const keys = require("./keys.js");
 const axios = require("axios");
+const moment = require("moment");
 const Spotify = require("node-spotify-api");
-
 const spotify = new Spotify(keys.spotify);
 
-console.log(spotify);
+
+//OPERATE FUNCTION
 function operate(command) {
+    let searchTerm = process.argv.slice(3).join(" ");
+
     switch (command) {
+        case `find-my-show`:
+            searchConcerts(searchTerm);
+            break;
+
         case `spotify-this-song`: 
-            searchSpotify(process.argv[3]);
+            searchSpotify(searchTerm);
             break;
 
         case `movie-this`:
-            movieFind(process.argv[3]);
+            movieFind(searchTerm);
             break;
 
         case `do-what-it-says`:
-            randomRead(process.argv[3]);
+            randomRead(searchTerm);
             break;
     }
 }
 operate(process.argv[2]);
 
-//SPOTIFY
-// 2. `node liri.js spotify-this-song '<song name here>'`
-//    * This will show the following information about the song in your terminal/bash window
-//      * Artist(s)
-//      * The song's name
-//      * A preview link of the song from Spotify
-//      * The album that the song is from
-//    * If no song is provided then your program will default to "The Sign" by Ace of Base.
+
+//BANDSinTOWN
+function searchConcerts(arg) {
+    axios({
+            method: 'get',
+            url:`https://rest.bandsintown.com/artists/${arg}/events?app_id=codingbootcamp&date=upcoming`,
+            responseType: "JSON"
+    })
+    .then(response => {
+            for (let i = 0; i < response.data.length; i++) {
+                console.log(`Date: ${moment(`${response.data[i].datetime}`).format("MM/DD/YYYY")}`);
+                console.log(`Venue: ${response.data[i].venue.name}`);
+                console.log(`${response.data[i].venue.city}, ${response.data[i].venue.country}`);
+                console.log(`Line-up: ${response.data[i].lineup.join(" ")}`);
+                console.log(`\r\n`);
+            }
+    })
+    .catch(err => console.log(err));
+}
 
 //SPOTIFY SEARCH FUNCTION
-function searchSpotify (arg1) {
-    spotify.search({type: "track", query: arg1}).then(response => {
+function searchSpotify (arg) {
+    spotify.search({type: "track", query: arg}).then(response => {
         let trackArray = response.tracks.items;
         for (let i = 0; i < trackArray.length; i++) {
+            console.log(`\r\n`);
             console.log(`Artist:${response.tracks.items[i].artists[0].name}`);
             console.log(`Song: ${response.tracks.items[i].name}`);
-            console.log(`Preview Link: ${response.tracks.preview_url}`);
+            console.log(`Preview Link: ${response.tracks.items[i].preview_url}`);
             console.log(`Album: ${response.tracks.items[i].name}`);
-            console.log("\r\n\r\n");
+            console.log(`\r\n`);
         }
     }).catch(err => console.log(err));
 }
 
 
+//OMDB SEARCH FUNCTION
+function movieFind (arg) {
+    if (!arg){
+        arg = `Mr. Nobody`;
+    } 
+    axios.get(`http://www.omdbapi.com/?apikey=trilogy&t=${arg}`)
+        .then(response => {
+            console.log(`\r\n`);
+            console.log(`Title: ${response.data.Title}`);
+            console.log(`Release Year: ${response.data.Year}`);
+            console.log(`IMDB Rating: ${response.data.Ratings[0].Value}`);
+            console.log(`Rotten Tomatoes Rating: ${response.data.Ratings[1].Value}`);
+            console.log(`Production Country/Countries: ${response.data.Country}`);
+            console.log(`Language(s): ${response.data.Language}`);
+            console.log(`\r\n`);
+            console.log(`Plot: ${response.data.Plot}`);
+            console.log(`\r\n`);
+            console.log(`Actors: ${response.data.Actors}`);
+            console.log(`\r\n`);
 
-// //OMDB 
-// 3. `node liri.js movie-this '<movie name here>'`
-
-//    * This will output the following information to your terminal/bash window:
-
-//      ```
-//        * Title of the movie.
-//        * Year the movie came out.
-//        * IMDB Rating of the movie.
-//        * Rotten Tomatoes Rating of the movie.
-//        * Country where the movie was produced.
-//        * Language of the movie.
-//        * Plot of the movie.
-//        * Actors in the movie.
-//      ```
-
-//    * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
+        })
+        .catch(err => console.log(err))
+}
 
 
 //rando 
