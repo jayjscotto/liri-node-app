@@ -1,1 +1,1 @@
-* spotify-this-song,"Stuck In The Middle With You"
+spotify-this-song "Stuck In The Middle With You"
