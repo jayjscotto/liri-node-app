@@ -44,11 +44,14 @@ function searchConcerts(arg) {
     })
     .then(response => {
             for (let i = 0; i < response.data.length; i++) {
-                console.log(`Date: ${moment(`${response.data[i].datetime}`).format("MM/DD/YYYY")}`);
-                console.log(`Venue: ${response.data[i].venue.name}`);
-                console.log(`${response.data[i].venue.city}, ${response.data[i].venue.country}`);
-                console.log(`Line-up: ${response.data[i].lineup.join(" ")}`);
+                data = `\n Date: ${moment(`${response.data[i].datetime}`).format("MM/DD/YYYY")} \n Venue: ${response.data[i].venue.name} \n ${response.data[i].venue.city}, ${response.data[i].venue.country} \n Line-up: ${response.data[i].lineup.join(" ")} \n`
+                // console.log(`Date: ${moment(`${response.data[i].datetime}`).format("MM/DD/YYYY")}`);
+                // console.log(`Venue: ${response.data[i].venue.name}`);
+                // console.log(`${response.data[i].venue.city}, ${response.data[i].venue.country}`);
+                // console.log(`Line-up: ${response.data[i].lineup.join(" ")}`);
                 console.log(`\r`);
+                console.log(data)
+                appendLog(data)
             }
     })
     .catch(err => console.log(err));
@@ -56,15 +59,19 @@ function searchConcerts(arg) {
 
 //SPOTIFY SEARCH FUNCTION
 function searchSpotify (arg) {
+    if (!arg){
+        arg = `The Sign`;
+    } 
     spotify.search({type: "track", query: arg}).then(response => {
-        let trackArray = response.tracks.items;
-        for (let i = 0; i < trackArray.length; i++) {
+        for (let i = 0; i < 10; i++) {
+            data = `\r Artist: ${response.tracks.items[i].artists[0].name} \r Song: ${response.tracks.items[i].name}\r Preview Link: ${response.tracks.items[i].preview_url} \r Album: ${response.tracks.items[i].name} \r`
             console.log(`\r\n`);
             console.log(`Artist: ${response.tracks.items[i].artists[0].name}`);
             console.log(`Song: ${response.tracks.items[i].name}`);
             console.log(`Preview Link: ${response.tracks.items[i].preview_url}`);
             console.log(`Album: ${response.tracks.items[i].name}`);
             console.log(`\r`);
+            appendLog(data);
         }
     }).catch(err => console.log(err));
 }
@@ -77,6 +84,7 @@ function movieFind (arg) {
     } 
     axios.get(`http://www.omdbapi.com/?apikey=trilogy&t=${arg}`)
         .then(response => {
+            data = `\r Title: ${response.data.Title} \r Release Year: ${response.data.Year} \r IMDB Rating: ${response.data.Ratings[0].Value} \r Rotten Tomatoes Rating: ${response.data.Ratings[1].Value} \r Production Country/Countries: ${response.data.Country} \r Language(s): ${response.data.Language} \r ${response.data.Plot} \r Actors: ${response.data.Actors} \r`
             console.log(`\r`);
             console.log(`Title: ${response.data.Title}`);
             console.log(`Release Year: ${response.data.Year}`);
@@ -89,7 +97,7 @@ function movieFind (arg) {
             console.log(`\r`);
             console.log(`Actors: ${response.data.Actors}`);
             console.log(`\r`);
-
+            appendLog(data)
         })
         .catch(err => console.log(err))
 }
@@ -112,5 +120,12 @@ function randomRead(arg) {
 
         //function call
         operate(searchCommand, searchContent);
+    }); 
+}
+
+//append log file with output of each function
+function appendLog(info) {
+    fs.appendFile("./log.txt", info, function (err) {
+        console.log(err);
     })
 }
