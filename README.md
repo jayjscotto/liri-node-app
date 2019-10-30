@@ -3,6 +3,8 @@
 Language Interpretation and Recognition Interface app using NodeJS, and the BandsInTown, and Spotify APIs.
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
+Requirements: Node.js
+
 
 ## Commands:
 
@@ -15,11 +17,10 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ## Usage:
 
 To use this project you'll need:
-    >NodeJS
-    >[Axios][axios], 
-    >[Spotify][node-spotify-api], 
-    >[Moment][moment], 
-    >[Dotenv][dotenv]
+    [Axios][axios], 
+    [Spotify][node-spotify-api], 
+    [Moment][moment], 
+    [Dotenv][dotenv]
 
 Installation of all dependencies is handled via npm:
 
