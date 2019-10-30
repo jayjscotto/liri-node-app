@@ -31,6 +31,9 @@ function operate(command, searchTerm) {
         case `do-what-it-says`:
             randomRead(searchTerm);
             break;
+        default:
+            operate(`spotify-this-song`, `Kickstart My Heart`);
+            break;
     }
 }
 operate(process.argv[2], process.argv.slice(3).join(" "));
