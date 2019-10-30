@@ -15,11 +15,11 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ## Usage:
 
 To use this project you'll need:
-    NodeJS
-    [Axios][axios], 
-    [Spotify][node-spotify-api], 
-    [Moment][moment], 
-    [Dotenv][dotenv]
+    >NodeJS
+    >[Axios][axios], 
+    >[Spotify][node-spotify-api], 
+    >[Moment][moment], 
+    >[Dotenv][dotenv]
 
 Installation of all dependencies is handled via npm:
 
