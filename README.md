@@ -4,11 +4,12 @@ Language Interpretation and Recognition Interface app using NodeJS, and the Band
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
 
-
 ## Commands:
+
 `find-my-show` : find concerts for your favorite band 
 `spotify-this-song` : Spotify search your favorite song
 `movie-this` : search OMDB for your favorite movie
+`do-what-it-says` : reads from random.txt file and executes the command & search term inside the file
 
 
 ## Usage:
@@ -24,13 +25,15 @@ Installation of all dependencies is handled via npm:
 
     npm install
 
+Please note that the following are also necessary to make the API requests:
 
-Next, create a `.env` file and add the following to it, replacing the values with your API keys once you have them:
+    Spotify ID, Spotify Secret
 
-```
-SPOTIFY_ID=your-spotify-id
-SPOTIFY_SECRET=your-spotify-secret
-```
+These can be attained by creating an account or logging in to:
+
+    https://developer.spotify.com/
+
+
 ## Demo:
 
 1) COMMAND: run `$node liri.js find-my-show [Band/Artist Name Here]` ex: Metallica
