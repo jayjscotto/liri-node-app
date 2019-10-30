@@ -8,18 +8,25 @@ Requirements: Node.js
 
 ## Commands:
 
--`find-my-show` : find concerts for your favorite band
--`spotify-this-song` : Spotify search your favorite song
--`movie-this` : search OMDB for your favorite movie
--`do-what-it-says` : reads from random.txt file and executes the command & search term inside the file
+    -`find-my-show` : find concerts for your favorite band
+
+    -`spotify-this-song` : Spotify search your favorite song
+
+    -`movie-this` : search OMDB for your favorite movie
+
+    -`do-what-it-says` : reads from random.txt file and executes the command & search term inside the file
 
 
 ## Usage:
 
 To use this project you'll need:
+
     -[Axios][axios] 
+    
     -[Spotify][node-spotify-api]
+    
     -[Moment][moment]
+    
     -[Dotenv][dotenv]
 
 Installation of all dependencies is handled via npm:
