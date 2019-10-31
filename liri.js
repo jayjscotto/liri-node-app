@@ -1,15 +1,16 @@
 require("dotenv").config();
 
-
 //require modules
-
 const fs = require("fs");
 const Find = require("./search");
 var find = new Find();
 
 //OPERATE FUNCTION
 function operate(command, searchTerm) {
-    find.appendLog(`\r\n Command: ${command} Search Parameter: ${searchTerm} \r\n`);
+
+    let logData = `\r\n Command: ${command} Search Parameter: ${searchTerm} \r\n`
+    find.appendLog(logData);
+
     switch (command) {
         //bandsintown function
         case `find-my-show`:
@@ -35,6 +36,7 @@ function operate(command, searchTerm) {
             break;
     }
 }
+//call the function with command line arguments
 operate(process.argv[2], process.argv.slice(3).join(" "));
 
 //random search

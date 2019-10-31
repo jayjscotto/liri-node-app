@@ -1,12 +1,12 @@
+//require modules and keys
 const axios = require("axios");
 const keys = require("./keys.js");
 const moment = require("moment");
 const Spotify = require("node-spotify-api");
 const fs = require("fs");
-
 const spotify = new Spotify(keys.spotify);
 
-
+//find constructor
 var Find = function() {
 
     //BANDSINTOWN SEARCH FUNCTION
@@ -73,5 +73,5 @@ var Find = function() {
     }
 };
 
-
+//export Find constructor
 module.exports = Find;
