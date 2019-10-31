@@ -245,3 +245,225 @@
  Venue: Discovery Park 
  Sacramento, United States 
  Line-up: Metallica Aftershock Festival 
+
+ Command: spotify-this-song Search Parameter: All The Small Things 
+
+ Command: spotify-this-song Search Parameter: All The Small Things 
+
+ Command: spotify-this-song Search Parameter: All The Small Things 
+
+ Artist: blink-182 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Artist: Scott Bradlee's Postmodern Jukebox 
+ Song: All The Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/8a39c7a626a1c4f9e8c5717668319cbd646edca5?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All The Small Things 
+
+ Artist: Imaginary Future 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/fa6af7d1104fb2bab909409a5eac6060b8121283?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: blink-182 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Artist: Fame on Fire 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/c0946e586a6c7673db9e601e97a966280d25d680?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: Rockabye Baby! 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/6c44f4d3cea18aa2a0f7b13ceb0183e10db82ece?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: blink-182 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Artist: Piano Project 
+ Song: All The Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/3e97b6e489b120fa80b6a552b03ffb8f348b9e01?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All The Small Things 
+
+ Artist: Twinkle Twinkle Little Rock Star 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/d2e3e12f2b3f3eb6bf52285fd93858e994b8c062?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: Son Hieu Nam 
+ Song: I Showed Him All the Things 
+ Preview Link: https://p.scdn.co/mp3-preview/f8b44a5fbd97202c1fc85c876d67044f2636c2b7?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: I Showed Him All the Things 
+
+ Artist: Vitamin String Quartet 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/25ea1fe0febb37abb4322be21681e1950ac15797?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: Blasterpoint 
+ Song: All The Small Things (Famicom Edition) 
+ Preview Link: https://p.scdn.co/mp3-preview/b7b30cc9884cfd12e0a74ae8ec0b25be33297b4f?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All The Small Things (Famicom Edition) 
+
+ Artist: blink-182 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Artist: Cloudsmiff 
+ Song: All the Small Things - Acoustic 
+ Preview Link: https://p.scdn.co/mp3-preview/70ea7c6a100536c98ecae6d1d96146513eacb9a3?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things - Acoustic 
+
+ Artist: Kidz Bop Kids 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Artist: GFOTY 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/b2d84fc88990ea1321c743e9b16fe3669af46278?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: blink-182 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/4bdfe978425fb2dbf43648fec6a42d6c4d3011bf?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: blink-182 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Artist: Scary Pockets 
+ Song: All the Small Things 
+ Preview Link: https://p.scdn.co/mp3-preview/dc71a8317a6dd6d9f7301393dae84769e5854271?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: All the Small Things 
+
+ Artist: blink-182 
+ Song: All The Small Things 
+ Preview Link: null 
+ Album: All The Small Things 
+
+ Command: movie-this Search Parameter: Rush Hour 3 
+
+ Title: Rush Hour 3 
+ Release Year: 2007 
+ IMDB Rating: 6.2/10 
+ Rotten Tomatoes Rating: 18% 
+ Production Country/Countries: USA, Germany 
+ Language(s): English, French, Japanese, Mandarin, Latin 
+ Plot: After an attempted assassination on Ambassador Han, Lee and Carter head to Paris to protect a French woman with knowledge of the Triads' secret leaders. 
+ Actors: Chris Tucker, Jackie Chan, Max von Sydow, Hiroyuki Sanada 
+
+ Command: do-what-it-says Search Parameter:  
+
+ Command: spotify-this-song Search Parameter: "Stuck In The Middle With You"
+ 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: The Jeff Healey Band 
+ Song: Stuck In The Middle With You 
+ Preview Link: https://p.scdn.co/mp3-preview/84636f2636ee35d9ab6125ca43717e5483e964f1?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck in the Middle with You - Re-Recorded / Remastered 
+ Preview Link: https://p.scdn.co/mp3-preview/c4199c22ffecb9a0d4238e37b2ce462c8d67bb3a?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck in the Middle with You - Re-Recorded / Remastered 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: KnightsBridge 
+ Song: Stuck in the Middle with You - From "Reservoir Dogs" 
+ Preview Link: https://p.scdn.co/mp3-preview/9b938eed9649d9b10187bfb7ab649460647a289a?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck in the Middle with You - From "Reservoir Dogs" 
+
+ Artist: Louise 
+ Song: Stuck in the Middle with You 
+ Preview Link: https://p.scdn.co/mp3-preview/2003b82c026124f9cec0f14b25b938f12b9d5c97?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck in the Middle with You 
+
+ Artist: Lazlo Bane 
+ Song: Stuck In The Middle With You 
+ Preview Link: https://p.scdn.co/mp3-preview/7e47c8b7e9749233e59ba39acc060dd157410203?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: Keith Urban 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: City Boy 
+ Song: Stuck in the Middle with You 
+ Preview Link: https://p.scdn.co/mp3-preview/16d64c74058c3e890608a429ab1bee2e0bb75739?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck in the Middle with You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
+
+ Artist: KnightsBridge 
+ Song: Stuck in the Middle with You 
+ Preview Link: https://p.scdn.co/mp3-preview/9b938eed9649d9b10187bfb7ab649460647a289a?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck in the Middle with You 
+
+ Artist: Dawn and Hawkes 
+ Song: Stuck In The Middle With You - The Voice Performance 
+ Preview Link: null 
+ Album: Stuck In The Middle With You - The Voice Performance 
+
+ Artist: Collin Raye 
+ Song: Stuck in the Middle With You 
+ Preview Link: https://p.scdn.co/mp3-preview/9f5f5da76f417b62f31004877ad1744ffd5afba1?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck in the Middle With You 
+
+ Artist: Loving Caliber 
+ Song: Stuck In The Middle With You 
+ Preview Link: https://p.scdn.co/mp3-preview/f07609d7589e1ab5603e8db0ec2631f419d03591?cid=86ecf0cee43d4ac29d5ee5280b27750f 
+ Album: Stuck In The Middle With You 
+
+ Artist: Stealers Wheel 
+ Song: Stuck In The Middle With You 
+ Preview Link: null 
+ Album: Stuck In The Middle With You 
